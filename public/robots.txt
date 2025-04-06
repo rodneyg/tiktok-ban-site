@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tiktokbanfacts.com
+
+# Sitemaps
+Sitemap: https://tiktokbanfacts.com/sitemap.xml
