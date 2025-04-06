@@ -9,7 +9,7 @@ export default function FAQPage() {
       <SEOHead
         title="TikTok Ban FAQ – What You Need to Know"
         description="Top questions about the TikTok ban in the U.S., including legality, access, VPN use, and what happens on June 19, 2025."
-        url="https://tiktokban.com/faq"
+        url="https://didtiktokgetbanned.com/faq"
       />
 
       <div className="min-h-screen bg-white text-black p-6 max-w-2xl mx-auto space-y-10">
