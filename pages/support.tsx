@@ -8,7 +8,7 @@ export default function SupportPage() {
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
         description="Countdown to the new TikTok ban deadline: June 19, 2025. Get updates, stay informed, and protect your access now."
-        url="https://yourdomain.com"
+        url="https://didtiktokgetbanned.com"
       />
 
       <div className="min-h-screen bg-white text-black p-6 max-w-2xl mx-auto text-center space-y-6">
@@ -16,7 +16,7 @@ export default function SupportPage() {
         <p>This site is run by independent creators. No ads, no paywall — just truth.</p>
         <p>If you found it helpful, buy us a coffee to help cover hosting costs and keep it going.</p>
         <a
-          href="https://ko-fi.com/rg2official"
+          href="https://ko-fi.com/rg2official/?tier=Support%20with%20%243"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block text-white bg-black px-6 py-3 rounded-full font-semibold"

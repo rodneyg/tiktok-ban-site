@@ -8,7 +8,7 @@ export default function WhatThisMeans() {
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
         description="Countdown to the new TikTok ban deadline: June 19, 2025. Get updates, stay informed, and protect your access now."
-        url="https://yourdomain.com"
+        url="https://didtiktokgetbanned.com"
       />
 
       <div className="min-h-screen bg-white text-black p-6 max-w-2xl mx-auto space-y-6">

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import SEOHead from './components/SEOHead';
 import LiveCountdown from './components/LiveCountdown';
+import ShareBlock from './components/ShareBlock';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
         description="Countdown to the new TikTok ban deadline: June 19, 2025. Get updates, stay informed, and protect your access now."
-        url="https://yourdomain.com"
+        url="https://didtiktokgetbanned.com"
       />
 
       <div className="min-h-screen bg-white text-black p-6 flex flex-col items-center justify-center space-y-10">
@@ -18,6 +19,7 @@ export default function Home() {
           <p className="text-xl">No — but the clock is ticking.</p>
           <LiveCountdown />
           <p className="text-sm text-gray-500">(Based on current U.S. deadline: Thursday, June 19, 2025)</p>
+          <ShareBlock />
         </div>
 
         <nav className="text-center space-x-4 pb-4">
@@ -71,13 +73,13 @@ export default function Home() {
           <div className="text-center border-t pt-6">
             <p className="text-sm">Built by creators. Help us stay independent and ad-free.</p>
             <a
-              href="https://ko-fi.com/rg2official"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-block text-white bg-black px-4 py-2 rounded-full font-semibold"
-            >
-              Support with $3
-            </a>
+  href="https://ko-fi.com/rg2official/?tier=Support%20with%20%243"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-2 inline-block text-white bg-black px-4 py-2 rounded-full font-semibold"
+>
+  Support with $3
+</a>
           </div>
         </div>
       </div>
