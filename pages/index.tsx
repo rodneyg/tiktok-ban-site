@@ -1,12 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import SEOHead from './components/SEOHead';
+import LiveCountdown from './components/LiveCountdown';
 
 export default function Home() {
-  const banDate = new Date('2025-06-19T00:00:00');
-  const now = new Date();
-  const daysLeft = Math.max(Math.ceil((banDate.getTime() - now.getTime()) / (1000 * 60 * 60 * 24)), 0);
-
   return (
     <>
       <SEOHead
@@ -19,19 +16,14 @@ export default function Home() {
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold">Did TikTok Get Banned Today?</h1>
           <p className="text-xl">No — but the clock is ticking.</p>
-          <p
-            className={`text-5xl font-extrabold ${
-              daysLeft < 30 ? 'text-red-600' : daysLeft < 60 ? 'text-yellow-500' : 'text-green-600'
-            }`}
-          >
-            {daysLeft} Days Left
-          </p>
+          <LiveCountdown />
           <p className="text-sm text-gray-500">(Based on current U.S. deadline: Thursday, June 19, 2025)</p>
         </div>
 
         <nav className="text-center space-x-4 pb-4">
           <Link href="/what-this-means" className="text-blue-600 underline">What This Means</Link>
           <Link href="/status" className="text-blue-600 underline">Status</Link>
+          <Link href="/faq" className="text-blue-600 underline">FAQ</Link>
           <Link href="/support" className="text-blue-600 underline">Support</Link>
         </nav>
 
