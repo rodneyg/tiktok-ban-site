@@ -30,8 +30,34 @@ export default function WhatThisMeans() {
         </p>
         <p>
           We&apos;ll continue tracking legal changes and update this site immediately if anything shifts again.
-        </p>
+        </p>        
         <Link href="/" className="text-blue-600 underline">← Back to home</Link>
+
+        <div className="mt-8 text-sm text-gray-600 border-t pt-4">
+  <p>Related Sources:</p>
+  <ul className="list-disc ml-6 mt-2 space-y-1">
+    <li>
+      <a
+        href="https://www.npr.org/2025/01/20/nx-s1-5268701/trump-executive-order-tiktok-ban"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-600"
+      >
+        Jan 2025 – Trump signs original TikTok ban executive order
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.npr.org/2025/04/04/nx-s1-5347418/trump-tiktok-second-ban-delay"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-600"
+      >
+        Apr 2025 – Trump delays TikTok ban by another 75 days
+      </a>
+    </li>
+  </ul>
+</div>
       </div>
     </>
   );

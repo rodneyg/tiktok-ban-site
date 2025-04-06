@@ -18,7 +18,18 @@ export default function Home() {
           <h1 className="text-4xl font-bold">Did TikTok Get Banned Today?</h1>
           <p className="text-xl">No — but the clock is ticking.</p>
           <LiveCountdown />
-          <p className="text-sm text-gray-500">(Based on current U.S. deadline: Thursday, June 19, 2025)</p>
+          <p className="text-sm text-gray-500">
+  (Based on current U.S. deadline: <strong>Thursday, June 19, 2025</strong>.{' '}
+  <a
+    href="https://www.npr.org/2025/04/04/nx-s1-5347418/trump-tiktok-second-ban-delay"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="underline text-blue-600"
+  >
+    Source
+  </a>
+  )
+</p>
           <ShareBlock />
         </div>
 
