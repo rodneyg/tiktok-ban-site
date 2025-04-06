@@ -9,7 +9,7 @@ interface SEOHeadProps {
 export default function SEOHead({
   title = 'Is TikTok Banned Today? | TikTok Ban Countdown',
   description = 'Track the official U.S. TikTok ban deadline: Thursday, June 19, 2025. Stay updated, protect your access, and get clear answers.',
-  url = 'https://yourdomain.com'
+  url = 'https://didtiktokgetbanned.com'
 }: SEOHeadProps) {
   return (
     <Head>
