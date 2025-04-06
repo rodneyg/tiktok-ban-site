@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://tiktokbanfacts.com
+Host: https://didtiktokgetbanned.com
 
 # Sitemaps
-Sitemap: https://tiktokbanfacts.com/sitemap.xml
+Sitemap: https://didtiktokgetbanned.com/sitemap.xml
