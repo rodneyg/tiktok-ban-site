@@ -30,6 +30,17 @@ export default function Home() {
   </a>
   )
 </p>
+          <p className="text-sm text-amber-600">
+            Note: President Trump has indicated he would extend the deadline again if no deal is reached by June 19, 2025.{' '}
+            <a
+              href="https://www.reuters.com/business/media-telecom/trump-says-would-extend-tiktok-deadline-if-there-is-still-no-deal-2025-05-04/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline text-blue-600"
+            >
+              (Source: Reuters, May 4, 2025)
+            </a>
+          </p>
           <ShareBlock />
         </div>
 
