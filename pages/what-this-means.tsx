@@ -30,7 +30,32 @@ export default function WhatThisMeans() {
         </p>
         <p>
           We&apos;ll continue tracking legal changes and update this site immediately if anything shifts again.
-        </p>        
+        </p>
+        <p>
+          A prospective deal to spin off TikTok&apos;s U.S. operations into a new firm was put on hold after China indicated it would not approve it following President Trump&apos;s announcements of steep tariffs on Chinese goods.{' '}
+          <a
+            href="https://www.reuters.com/business/media-telecom/trump-says-would-extend-tiktok-deadline-if-there-is-still-no-deal-2025-05-04/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600"
+          >
+            (Source: Reuters, May 4, 2025)
+          </a>
+        </p>
+        <div className="mt-6 bg-gray-50 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold">Potential Buyers</h3>
+          <p className="mt-2">
+            Several entities have expressed interest in acquiring TikTok&apos;s U.S. operations, including Amazon, Frank McCourt with Kevin O&apos;Leary, Microsoft, Blackstone, Andreessen Horowitz, and Perplexity AI.{' '}
+            <a
+              href="https://www.bbc.com/news/articles/cx256dd1znpo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600"
+            >
+              (Source: BBC, April 4, 2025)
+            </a>
+          </p>
+        </div>        
         <Link href="/" className="text-blue-600 underline">← Back to home</Link>
 
         <div className="mt-8 text-sm text-gray-600 border-t pt-4">
@@ -54,6 +79,26 @@ export default function WhatThisMeans() {
         className="underline text-blue-600"
       >
         Apr 2025 – Trump delays TikTok ban by another 75 days
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.reuters.com/business/media-telecom/trump-says-would-extend-tiktok-deadline-if-there-is-still-no-deal-2025-05-04/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-600"
+      >
+        May 2025 – Trump says would extend TikTok deadline if no deal reached
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.bbc.com/news/articles/cx256dd1znpo"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline text-blue-600"
+      >
+        Apr 2025 – BBC reports on potential TikTok buyers
       </a>
     </li>
   </ul>

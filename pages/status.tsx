@@ -20,6 +20,17 @@ export default function StatusPage() {
           The next major deadline is <strong>Thursday, June 19, 2025</strong>. We&apos;ll update this page as soon as any new decisions or delays happen.
         </p>
         <p>
+          As of May 4, 2025, the deal is stalled due to China&apos;s reluctance following the tariff announcements. The Trump administration, led by Vice-President JD Vance, is actively working to find a buyer.{' '}
+          <a
+            href="https://www.reuters.com/business/media-telecom/trump-says-would-extend-tiktok-deadline-if-there-is-still-no-deal-2025-05-04/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-blue-600"
+          >
+            (Source: Reuters, May 4, 2025)
+          </a>
+        </p>
+        <p>
           Bookmark this page to stay up to date — no trackers, no noise.
         </p>
         <Link href="/" className="text-blue-600 underline">← Back to home</Link>
