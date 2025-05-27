@@ -14,6 +14,8 @@ A minimalist, real-time tracker showing how many days are left until the U.S. Ti
 
 https://tiktok-ban-site.vercel.app/
 
+Site uses Vercel's built-in, cookie-less analytics.
+
 ---
 
 ## 📌 What It Does
