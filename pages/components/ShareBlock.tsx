@@ -2,7 +2,7 @@
 import React from 'react';
 
 const message = encodeURIComponent(
-  "TikTok could be banned in the U.S. by June 19, 2025. Track it live: https://www.didtiktokgetbanned.com/"
+  "TikTok could be banned in the U.S. by September 17, 2025. Track it live: https://www.didtiktokgetbanned.com/"
 );
 const url = 'https://www.didtiktokgetbanned.com/';
 

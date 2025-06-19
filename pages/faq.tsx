@@ -8,7 +8,7 @@ export default function FAQPage() {
     <>
       <SEOHead
         title="TikTok Ban FAQ – What You Need to Know"
-        description="Top questions about the TikTok ban in the U.S., including legality, access, VPN use, and what happens on June 19, 2025."
+        description="Top questions about the TikTok ban in the U.S., including legality, access, VPN use, and what happens on September 17, 2025."
         url="https://didtiktokgetbanned.com/faq"
       />
 
@@ -25,7 +25,7 @@ export default function FAQPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">What happens on June 19, 2025?</h2>
+            <h2 className="text-xl font-semibold">What happens on September 17, 2025?</h2>
             <p>
               If ByteDance hasn’t sold TikTok by then, Apple and Google will be legally required to remove it from their app stores in the U.S.
               Internet providers may also block access. No one will be forced to delete the app — but reinstalling or updating it may become impossible.

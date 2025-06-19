@@ -3,7 +3,7 @@
 **Is TikTok banned yet?**  
 A minimalist, real-time tracker showing how many days are left until the U.S. TikTok ban deadline.
 
-> **Next Deadline: June 19, 2025**  
+> **Next Deadline: September 17, 2025**  
 > Stay informed. Protect your access. Track the clock.
 
 ![tiktok-ban-card](https://github.com/user-attachments/assets/438d2715-5d42-4c8f-a893-b71445c1d1dc)

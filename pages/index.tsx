@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
-        description="Countdown to the new TikTok ban deadline: June 19, 2025. Get updates, stay informed, and protect your access now."
+        description="Countdown to the new TikTok ban deadline: September 17, 2025. Get updates, stay informed, and protect your access now."
         url="https://didtiktokgetbanned.com"
       />
 
@@ -19,26 +19,26 @@ export default function Home() {
           <p className="text-xl">No — but the clock is ticking.</p>
           <LiveCountdown />
           <p className="text-sm text-gray-500">
-  (Based on current U.S. deadline: <strong>Thursday, June 19, 2025</strong>.{' '}
+  (Based on current U.S. deadline: <strong>Thursday, September 17, 2025</strong>.{' '}
   <a
-    href="https://www.npr.org/2025/04/04/nx-s1-5347418/trump-tiktok-second-ban-delay"
+    href="https://www.reuters.com/business/media-telecom/trump-extends-tiktok-sale-deadline-to-september-2025-06-19/"
     target="_blank"
     rel="noopener noreferrer"
     className="underline text-blue-600"
   >
-    Source
+    Source: Reuters, June 19, 2025
   </a>
   )
 </p>
           <p className="text-sm text-amber-600">
-            Note: President Trump has indicated he would extend the deadline again if no deal is reached by June 19, 2025.{' '}
+            Note: President Trump signed an executive order on June 19, 2025 granting a 90-day extension to the TikTok sale deadline.{' '}
             <a
-              href="https://www.reuters.com/business/media-telecom/trump-says-would-extend-tiktok-deadline-if-there-is-still-no-deal-2025-05-04/"
+              href="https://www.reuters.com/business/media-telecom/trump-extends-tiktok-sale-deadline-to-september-2025-06-19/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline text-blue-600"
             >
-              (Source: Reuters, May 4, 2025)
+              (Source: Reuters, June 19, 2025)
             </a>
           </p>
           <ShareBlock />
@@ -88,7 +88,7 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-2">This Week&apos;s Status</h3>
             <p>
               TikTok is still live. There is no ban this weekend. The next major decision deadline is{' '}
-              <strong>Thursday, June 19, 2025</strong>.
+              <strong>Thursday, September 17, 2025</strong>.
             </p>
           </div>
 
