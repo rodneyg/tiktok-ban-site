@@ -7,7 +7,7 @@ export default function StatusPage() {
     <>
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
-        description="Countdown to the new TikTok ban deadline: September 17, 2025. Get updates, stay informed, and protect your access now."
+        description="Countdown to the new TikTok ban deadline: 17 September 2025. Get updates, stay informed, and protect your access now."
         url="https://didtiktokgetbanned.com"
       />
 
@@ -17,7 +17,7 @@ export default function StatusPage() {
           <strong>Status:</strong> TikTok is currently <span className="text-green-600 font-semibold">NOT BANNED</span> in the United States.
         </p>
         <p>
-          The next major deadline is <strong>Thursday, September 17, 2025</strong>. We&apos;ll update this page as soon as any new decisions or delays happen.
+          The next major decision window closes <strong>Thursday, 17 September 2025</strong>. We&apos;ll update this page as soon as any new decisions or delays happen.
         </p>
         <p>
           On June 19, 2025, President Trump signed a new executive order giving ByteDance an extra 90 days to sell TikTok, pushing the deadline to September 17, 2025.{' '}

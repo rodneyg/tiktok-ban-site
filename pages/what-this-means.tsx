@@ -7,7 +7,7 @@ export default function WhatThisMeans() {
     <>
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
-        description="Countdown to the new TikTok ban deadline: September 17, 2025. Get updates, stay informed, and protect your access now."
+        description="Countdown to the new TikTok ban deadline: 17 September 2025. Get updates, stay informed, and protect your access now."
         url="https://didtiktokgetbanned.com"
       />
 
@@ -20,7 +20,7 @@ export default function WhatThisMeans() {
           On <strong>April 4, 2025</strong>, President Trump signed an extension, pushing the deadline to June 19, 2025. Then on <strong>June 19, 2025</strong>, he signed another executive order granting a 90-day extension. The current deadline is:
         </p>
         <p className="text-xl font-semibold text-red-600">
-          <strong>Thursday, September 17, 2025</strong>
+          <strong>Thursday, 17 September 2025</strong>
         </p>
         <p>
           This means TikTok could still be banned if ByteDance does not sell its U.S. operations to an approved American buyer by then.
