@@ -7,7 +7,7 @@ export default function WhatThisMeans() {
     <>
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
-        description="Countdown to the new TikTok ban deadline: June 19, 2025. Get updates, stay informed, and protect your access now."
+        description="Countdown to the new TikTok ban deadline: 17 September 2025. Get updates, stay informed, and protect your access now."
         url="https://didtiktokgetbanned.com"
       />
 
@@ -17,10 +17,10 @@ export default function WhatThisMeans() {
           The original TikTok ban deadline was set for <strong>April 4, 2025</strong>, giving ByteDance 75 days to divest from TikTok&apos;s U.S. operations or face removal from U.S. app stores and potential ISP blocking.
         </p>
         <p>
-          On <strong>April 4, 2025</strong>, former President Trump officially signed an extension, pushing the deadline out another 75 days. The new date is:
+          On <strong>April 4, 2025</strong>, President Trump signed an extension, pushing the deadline to June 19, 2025. Then on <strong>June 19, 2025</strong>, he signed another executive order granting a 90-day extension. The current deadline is:
         </p>
         <p className="text-xl font-semibold text-red-600">
-          <strong>Thursday, June 19, 2025</strong>
+          <strong>Thursday, 17 September 2025</strong>
         </p>
         <p>
           This means TikTok could still be banned if ByteDance does not sell its U.S. operations to an approved American buyer by then.
@@ -32,14 +32,14 @@ export default function WhatThisMeans() {
           We&apos;ll continue tracking legal changes and update this site immediately if anything shifts again.
         </p>
         <p>
-          A prospective deal to spin off TikTok&apos;s U.S. operations into a new firm was put on hold after China indicated it would not approve it following President Trump&apos;s announcements of steep tariffs on Chinese goods.{' '}
+          On June 19, 2025, President Trump signed a new executive order giving ByteDance an extra 90 days to sell TikTok, pushing the deadline to September 17, 2025.{' '}
           <a
-            href="https://www.reuters.com/business/media-telecom/trump-says-would-extend-tiktok-deadline-if-there-is-still-no-deal-2025-05-04/"
+            href="https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600"
           >
-            (Source: Reuters, May 4, 2025)
+            (Source: Reuters, June 19, 2025)
           </a>
         </p>
         <div className="mt-6 bg-gray-50 p-4 rounded-lg">
@@ -83,12 +83,12 @@ export default function WhatThisMeans() {
     </li>
     <li>
       <a
-        href="https://www.reuters.com/business/media-telecom/trump-says-would-extend-tiktok-deadline-if-there-is-still-no-deal-2025-05-04/"
+        href="https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/"
         target="_blank"
         rel="noopener noreferrer"
         className="underline text-blue-600"
       >
-        May 2025 – Trump says would extend TikTok deadline if no deal reached
+        Jun 2025 – Trump extends TikTok sale deadline to September
       </a>
     </li>
     <li>

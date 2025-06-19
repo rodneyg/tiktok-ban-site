@@ -7,7 +7,7 @@ export default function SupportPage() {
     <>
       <SEOHead
         title="TikTok Ban Countdown – Is TikTok Banned Today?"
-        description="Countdown to the new TikTok ban deadline: June 19, 2025. Get updates, stay informed, and protect your access now."
+        description="Countdown to the new TikTok ban deadline: 17 September 2025. Get updates, stay informed, and protect your access now."
         url="https://didtiktokgetbanned.com"
       />
 

@@ -1,18 +1,14 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { DateTime, Interval } from 'luxon';
-
-const target = DateTime.fromISO('2025-06-19T00:00:00', { zone: 'America/New_York' });
+import { getTimeRemaining } from '../../utils/time';
 
 export default function LiveCountdown() {
-  const [timeLeft, setTimeLeft] = useState<Interval | null>(null);
+  const [timeLeft, setTimeLeft] = useState<{ days: number; hours: number; minutes: number; seconds: number } | null>(null);
 
   useEffect(() => {
     const update = () => {
-      const now = DateTime.now().setZone('America/New_York');
-      const interval = Interval.fromDateTimes(now, target);
-      setTimeLeft(interval);
+      setTimeLeft(getTimeRemaining());
     };
 
     update();
@@ -22,11 +18,11 @@ export default function LiveCountdown() {
 
   if (!timeLeft) return null;
 
-  const duration = timeLeft.toDuration(['days', 'hours', 'minutes', 'seconds']).shiftTo('days', 'hours', 'minutes', 'seconds');
-  const d = Math.floor(duration.days);
-  const h = duration.hours.toString().padStart(2, '0');
-  const m = duration.minutes.toString().padStart(2, '0');
-  const s = duration.seconds.toFixed(0).padStart(2, '0');
+  const { days, hours, minutes, seconds } = timeLeft;
+  const d = days;
+  const h = hours.toString().padStart(2, '0');
+  const m = minutes.toString().padStart(2, '0');
+  const s = seconds.toString().padStart(2, '0');
 
   return (
     <div className="text-4xl font-bold text-center">
