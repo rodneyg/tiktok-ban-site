@@ -22,7 +22,7 @@ export default function Home() {
             <span className="text-sm">
               (Source:{' '}
               <a
-                href="https://www.reuters.com/business/media-telecom/trump-extends-tiktok-sale-deadline-to-september-2025-06-19/"
+                href="https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-blue-600"
@@ -36,7 +36,7 @@ export default function Home() {
           <p className="text-sm text-gray-500">
   (Based on current U.S. deadline: <strong>Thursday, September 17, 2025</strong>.{' '}
   <a
-    href="https://www.reuters.com/business/media-telecom/trump-extends-tiktok-sale-deadline-to-september-2025-06-19/"
+    href="https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/"
     target="_blank"
     rel="noopener noreferrer"
     className="underline text-blue-600"
@@ -48,7 +48,7 @@ export default function Home() {
           <p className="text-sm text-amber-600">
             Note: President Trump signed an executive order on June 19, 2025 granting a 90-day extension to the TikTok sale deadline.{' '}
             <a
-              href="https://www.reuters.com/business/media-telecom/trump-extends-tiktok-sale-deadline-to-september-2025-06-19/"
+              href="https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline text-blue-600"

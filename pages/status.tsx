@@ -22,7 +22,7 @@ export default function StatusPage() {
         <p>
           On June 19, 2025, President Trump signed a new executive order giving ByteDance an extra 90 days to sell TikTok, pushing the deadline to September 17, 2025.{' '}
           <a
-            href="https://www.reuters.com/business/media-telecom/trump-extends-tiktok-sale-deadline-to-september-2025-06-19/"
+            href="https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/"
             target="_blank"
             rel="noopener noreferrer"
             className="underline text-blue-600"
