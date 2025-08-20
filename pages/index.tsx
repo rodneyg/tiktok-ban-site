@@ -1,10 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
 import SEOHead from './components/SEOHead';
-import LiveCountdown from './components/LiveCountdown';
+import EnhancedCountdown from './components/EnhancedCountdown';
+import StatusBadge from './components/StatusBadge';
 import ShareBlock from './components/ShareBlock';
+import EmailSubscription from './components/EmailSubscription';
+import SiteStats from './components/SiteStats';
+import { getTimeRemaining } from '../utils/time';
 
 export default function Home() {
+  const timeLeft = getTimeRemaining();
+  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -46,6 +52,7 @@ export default function Home() {
       <div className="min-h-screen bg-white text-black p-6 flex flex-col items-center justify-center space-y-10">
         <header className="text-center space-y-4">
           <h1 className="text-4xl font-bold">Did TikTok Get Banned Today?</h1>
+          <StatusBadge daysRemaining={timeLeft.days} />
           <p className="text-xl font-semibold text-green-600">No — but the clock is ticking.</p>
           <p className="text-lg text-gray-600">
             Next Deadline: <strong>Thursday, 17 September 2025</strong>{' '}
@@ -65,7 +72,7 @@ export default function Home() {
         </header>
 
         <section aria-label="TikTok Ban Countdown">
-          <LiveCountdown />
+          <EnhancedCountdown />
           <p className="text-sm text-gray-500 text-center mt-4">
             (Based on current U.S. deadline: <strong>Thursday, September 17, 2025</strong>.{' '}
             <a
@@ -91,12 +98,21 @@ export default function Home() {
           </p>
         </section>
 
+        <section aria-label="Site Statistics">
+          <SiteStats />
+        </section>
+
+        <section aria-label="Email Updates">
+          <EmailSubscription />
+        </section>
+
         <section aria-label="Share this information">
           <ShareBlock />
         </section>
 
         <nav className="text-center space-x-4 pb-4" aria-label="Main navigation">
           <Link href="/what-this-means" className="text-blue-600 underline">What This Means</Link>
+          <Link href="/timeline" className="text-blue-600 underline">Timeline</Link>
           <Link href="/status" className="text-blue-600 underline">Status</Link>
           <Link href="/faq" className="text-blue-600 underline">FAQ</Link>
           <Link href="/support" className="text-blue-600 underline">Support</Link>

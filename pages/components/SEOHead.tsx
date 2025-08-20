@@ -24,6 +24,14 @@ export default function SEOHead({
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="canonical" href={url} />
       
+      {/* PWA Manifest */}
+      <link rel="manifest" href="/manifest.json" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="apple-mobile-web-app-title" content="TikTok Ban Tracker" />
+      <link rel="apple-touch-icon" href="/tiktok-ban-card.png" />
+      
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
