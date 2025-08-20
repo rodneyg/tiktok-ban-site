@@ -1,0 +1,33 @@
+{
+  "name": "TikTok Ban Tracker",
+  "short_name": "TikTok Ban",
+  "description": "Track the official U.S. TikTok ban deadline with real-time countdown",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f2937",
+  "orientation": "portrait-primary",
+  "categories": ["news", "utilities"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/tiktok-ban-card.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/tiktok-ban-card.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
