@@ -4,8 +4,6 @@ import SEOHead from './components/SEOHead';
 import EnhancedCountdown from './components/EnhancedCountdown';
 import StatusBadge from './components/StatusBadge';
 import ShareBlock from './components/ShareBlock';
-import EmailSubscription from './components/EmailSubscription';
-import SiteStats from './components/SiteStats';
 import { getTimeRemaining } from '../utils/time';
 
 export default function Home() {
@@ -96,14 +94,6 @@ export default function Home() {
               (Source: Reuters, June 19, 2025)
             </a>
           </p>
-        </section>
-
-        <section aria-label="Site Statistics">
-          <SiteStats />
-        </section>
-
-        <section aria-label="Email Updates">
-          <EmailSubscription />
         </section>
 
         <section aria-label="Share this information">
