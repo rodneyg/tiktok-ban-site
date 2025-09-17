@@ -37,7 +37,7 @@ export default function FAQPage() {
         "name": "Did TikTok get banned?",
         "acceptedAnswer": {
           "@type": "Answer", 
-          "text": "No, TikTok is not banned in the United States as of now. The current deadline for the TikTok ban is September 17, 2025."
+          "text": "No, TikTok is not banned in the United States as of now. The current deadline for the TikTok ban is December 16, 2025."
         }
       }
     ]
@@ -61,7 +61,7 @@ export default function FAQPage() {
             <h2 className="text-xl font-semibold" itemProp="name">Did TikTok get banned?</h2>
             <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
               <p itemProp="text">
-                <strong>No, TikTok is not banned in the United States as of now.</strong> The current deadline for the TikTok ban is September 17, 2025. ByteDance has until this date to sell TikTok to a US-approved buyer or face removal from US app stores.
+                <strong>No, TikTok is not banned in the United States as of now.</strong> The current deadline for the TikTok ban is December 16, 2025. ByteDance has until this date to sell TikTok to a US-approved buyer or face removal from US app stores.
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ export default function FAQPage() {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold">What happens on 17 September 2025?</h2>
+            <h2 className="text-xl font-semibold">What happens on 16 December 2025?</h2>
             <p>
               If ByteDance hasn’t sold TikTok by then, Apple and Google will be legally required to remove it from their app stores in the U.S.
               Internet providers may also block access. No one will be forced to delete the app — but reinstalling or updating it may become impossible.
