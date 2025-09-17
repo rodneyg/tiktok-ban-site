@@ -15,6 +15,36 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
+    date: '2025-09-17',
+    title: 'U.S.–China Framework Deal Announced',
+    description: 'A framework deal has been announced where U.S. investors (Oracle, Silver Lake, Andreessen Horowitz) will control ~80% of TikTok U.S. operations, with ByteDance retaining ~19.9%. U.S. user data will be hosted in Oracle data centers, though algorithm control remains unresolved.',
+    source: {
+      name: 'Reuters',
+      url: 'https://www.reuters.com/sustainability/boards-policy-regulation/tiktok-lives-us-china-deal-app-keep-operating-us-2025-09-16/?utm_source=chatgpt.com'
+    },
+    type: 'news'
+  },
+  {
+    date: '2025-09-16',
+    title: 'Deadline Extended to December 16, 2025',
+    description: 'The White House announced a further extension of the TikTok enforcement deadline to December 16, 2025, providing additional time for the framework deal to be finalized.',
+    source: {
+      name: 'White House',
+      url: 'https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/?utm_source=chatgpt.com'
+    },
+    type: 'extension'
+  },
+  {
+    date: '2025-01-20',
+    title: 'Supreme Court Upholds PAFACA Law',
+    description: 'The Supreme Court upheld the Protecting Americans from Foreign Adversary Controlled Applications Act (PAFACA) in TikTok v. Garland, confirming the legal requirement for ByteDance to divest U.S. TikTok operations.',
+    source: {
+      name: 'Wikipedia',
+      url: 'https://en.wikipedia.org/wiki/TikTok_v._Garland?utm_source=chatgpt.com'
+    },
+    type: 'legal'
+  },
+  {
     date: '2025-06-19',
     title: 'Trump Signs 90-Day Extension',
     description: 'President Trump signed another executive order granting ByteDance an additional 90 days to sell TikTok, pushing the deadline to September 17, 2025.',

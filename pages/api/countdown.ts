@@ -48,7 +48,7 @@ export default function handler(
         description: totalSeconds > 0 ? 'Time remaining until TikTok ban deadline' : 'TikTok ban deadline has passed'
       },
       lastUpdated: now.toISOString(),
-      nextDeadline: 'Thursday, September 17, 2025'
+      nextDeadline: 'Monday, December 16, 2025'
     };
 
     // Set cache headers for 1 second to keep data fresh
