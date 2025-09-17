@@ -19,9 +19,9 @@ export default function EnhancedCountdown() {
       const remaining = getTimeRemaining();
       setTimeLeft(remaining);
       
-      // Calculate progress (from Jan 1, 2025 to Sept 17, 2025)
+      // Calculate progress (from Jan 1, 2025 to Dec 16, 2025)
       const startDate = new Date('2025-01-01T00:00:00.000Z');
-      const endDate = new Date('2025-09-17T04:00:00.000Z');
+      const endDate = new Date('2025-12-16T05:00:00.000Z');
       const now = new Date();
       
       const totalDuration = endDate.getTime() - startDate.getTime();
