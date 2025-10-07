@@ -10,7 +10,7 @@ interface SEOHeadProps {
 
 export default function SEOHead({
   title = 'Did TikTok Get Banned? No - Current Status & Ban Countdown',
-  description = 'Is TikTok banned today? No. Track the official U.S. TikTok ban deadline: April 4, 2025. Get real-time updates on TikTok ban status, what it means, and how to protect your access.',
+  description = 'Is TikTok banned today? No. Track the official U.S. TikTok ban deadline: September 17, 2025. Get real-time updates on TikTok ban status, what it means, and how to protect your access.',
   url = 'https://didtiktokgetbanned.com',
   keywords = 'did tiktok get banned, is tiktok banned, tiktok ban, tiktok ban deadline, tiktok ban countdown, tiktok ban status, tiktok ban news, when is tiktok getting banned',
   structuredData

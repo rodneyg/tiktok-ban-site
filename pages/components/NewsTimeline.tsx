@@ -15,44 +15,74 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    date: '2025-01-20',
-    title: 'Trump Signs 75-Day Extension',
-    description: 'President Trump signed an executive order providing a 75-day extension of the TikTok ban enforcement, pushing the deadline to April 4, 2025.',
+    date: '2025-09-17',
+    title: 'U.S.–China Framework Deal Announced',
+    description: 'A framework deal has been announced where U.S. investors (Oracle, Silver Lake, Andreessen Horowitz) will control ~80% of TikTok U.S. operations, with ByteDance retaining ~19.9%. U.S. user data will be hosted in Oracle data centers, though algorithm control remains unresolved.',
     source: {
-      name: 'White House',
-      url: 'https://www.whitehouse.gov/presidential-actions/2025/01/application-protecting-americans-foreign-adversary-controlled-applications-act-tiktok/'
-    },
-    type: 'extension'
-  },
-  {
-    date: '2025-01-19',
-    title: 'Supreme Court Upholds TikTok Ban Law',
-    description: 'The Supreme Court unanimously upheld the Protecting Americans from Foreign Adversary Controlled Applications Act (PAFACA), confirming the legal requirement for ByteDance to divest U.S. TikTok operations or face a ban.',
-    source: {
-      name: 'Supreme Court',
-      url: 'https://www.supremecourt.gov/opinions/24pdf/24-656_ca7d.pdf'
-    },
-    type: 'legal'
-  },
-  {
-    date: '2025-01-19',
-    title: 'TikTok Briefly Goes Dark',
-    description: 'TikTok went offline for U.S. users for several hours before the ban deadline, displaying a message that the app would be unavailable. Service was restored after Trump\'s commitment to issue an extension.',
-    source: {
-      name: 'The Verge',
-      url: 'https://www.theverge.com/2025/1/18/24346353/tiktok-ban-us-shutdown'
+      name: 'Reuters',
+      url: 'https://www.reuters.com/sustainability/boards-policy-regulation/tiktok-lives-us-china-deal-app-keep-operating-us-2025-09-16/?utm_source=chatgpt.com'
     },
     type: 'news'
   },
   {
-    date: '2024-04-24',
-    title: 'President Biden Signs TikTok Ban Bill',
-    description: 'President Biden signed the Protecting Americans from Foreign Adversary Controlled Applications Act into law, requiring ByteDance to divest TikTok within 270 days (with possible 90-day extension) or face a ban.',
+    date: '2025-09-16',
+    title: 'Deadline Extended to December 16, 2025',
+    description: 'The White House announced a further extension of the TikTok enforcement deadline to December 16, 2025, providing additional time for the framework deal to be finalized.',
     source: {
-      name: 'NPR',
-      url: 'https://www.npr.org/2024/04/24/1246902000/biden-signs-tiktok-ban-bill'
+      name: 'White House',
+      url: 'https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/?utm_source=chatgpt.com'
+    },
+    type: 'extension'
+  },
+  {
+    date: '2025-01-20',
+    title: 'Supreme Court Upholds PAFACA Law',
+    description: 'The Supreme Court upheld the Protecting Americans from Foreign Adversary Controlled Applications Act (PAFACA) in TikTok v. Garland, confirming the legal requirement for ByteDance to divest U.S. TikTok operations.',
+    source: {
+      name: 'Wikipedia',
+      url: 'https://en.wikipedia.org/wiki/TikTok_v._Garland?utm_source=chatgpt.com'
     },
     type: 'legal'
+  },
+  {
+    date: '2025-06-19',
+    title: 'Trump Signs 90-Day Extension',
+    description: 'President Trump signed another executive order granting ByteDance an additional 90 days to sell TikTok, pushing the deadline to September 17, 2025.',
+    source: {
+      name: 'Reuters',
+      url: 'https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/'
+    },
+    type: 'extension'
+  },
+  {
+    date: '2025-04-04',
+    title: 'First Extension Signed',
+    description: 'Trump signed the first extension, pushing the original deadline from April 4 to June 19, 2025.',
+    source: {
+      name: 'NPR',
+      url: 'https://www.npr.org/2025/04/04/nx-s1-5347418/trump-tiktok-second-ban-delay'
+    },
+    type: 'extension'
+  },
+  {
+    date: '2025-01-20',
+    title: 'Original TikTok Ban Executive Order',
+    description: 'Trump signs the original executive order setting the TikTok ban process in motion with initial deadline.',
+    source: {
+      name: 'NPR',
+      url: 'https://www.npr.org/2025/01/20/nx-s1-5268701/trump-executive-order-tiktok-ban'
+    },
+    type: 'legal'
+  },
+  {
+    date: '2025-04-04',
+    title: 'Potential Buyers Emerge',
+    description: 'Several major companies including Amazon, Microsoft, and others express interest in acquiring TikTok\'s U.S. operations.',
+    source: {
+      name: 'BBC',
+      url: 'https://www.bbc.com/news/articles/cx256dd1znpo'
+    },
+    type: 'news'
   }
 ];
 

@@ -1,7 +1,7 @@
 import { DateTime, Interval } from "luxon";
 
-// Hard-coded UTC-5 timestamp (00:00 04 Apr 2025 America/New_York)
-export const TIKTOK_DEADLINE = DateTime.fromISO("2025-04-04T04:00:00.000Z");
+// Hard-coded UTC-5 timestamp (00:00 16 Dec 2025 America/New_York)
+export const TIKTOK_DEADLINE = DateTime.fromISO("2025-12-16T05:00:00.000Z");
 
 // Returns { days, hours, minutes, seconds } until the deadline
 export const getTimeRemaining = () => {
