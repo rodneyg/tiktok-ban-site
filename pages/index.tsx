@@ -28,7 +28,7 @@ export default function Home() {
       "name": "Did TikTok get banned?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No, TikTok is not banned in the United States as of now. The current deadline for the TikTok ban is December 16, 2025. ByteDance has until this date to sell TikTok to a US-approved buyer or face removal from US app stores."
+        "text": "No, TikTok is not banned in the United States as of now. The current deadline for the TikTok ban is April 4, 2025. ByteDance has until this date to sell TikTok to a US-approved buyer or face removal from US app stores."
       }
     },
     "about": {
@@ -42,7 +42,7 @@ export default function Home() {
     <>
       <SEOHead
         title="Did TikTok Get Banned? No - Current Status & Ban Countdown"
-        description="Is TikTok banned today? No. Track the official U.S. TikTok ban deadline: December 16, 2025. Get real-time updates on TikTok ban status, what it means, and how to protect your access."
+        description="Is TikTok banned today? No. Track the official U.S. TikTok ban deadline: April 4, 2025. Get real-time updates on TikTok ban status, what it means, and how to protect your access."
         url="https://didtiktokgetbanned.com"
         structuredData={structuredData}
       />
@@ -53,16 +53,16 @@ export default function Home() {
           <StatusBadge daysRemaining={timeLeft.days} />
           <p className="text-xl font-semibold text-green-600">No — but the clock is ticking.</p>
           <p className="text-lg text-gray-600">
-            Next Deadline: <strong>Monday, 16 December 2025</strong>{' '}
+            Next Deadline: <strong>Friday, April 4, 2025</strong>{' '}
             <span className="text-sm">
               (Source:{' '}
               <a
-                href="https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/?utm_source=chatgpt.com"
+                href="https://www.whitehouse.gov/presidential-actions/2025/01/application-protecting-americans-foreign-adversary-controlled-applications-act-tiktok/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline text-blue-600"
               >
-                White House, 16 Sep 2025
+                White House, January 20, 2025
               </a>
               )
             </span>
@@ -72,26 +72,26 @@ export default function Home() {
         <section aria-label="TikTok Ban Countdown">
           <EnhancedCountdown />
           <p className="text-sm text-gray-500 text-center mt-4">
-            (Based on current U.S. deadline: <strong>Monday, December 16, 2025</strong>.{' '}
+            (Based on current U.S. deadline: <strong>Friday, April 4, 2025</strong>.{' '}
             <a
-              href="https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/?utm_source=chatgpt.com"
+              href="https://www.whitehouse.gov/presidential-actions/2025/01/application-protecting-americans-foreign-adversary-controlled-applications-act-tiktok/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline text-blue-600"
             >
-              Source: White House, September 16, 2025
+              Source: White House, January 20, 2025
             </a>
             )
           </p>
           <p className="text-sm text-amber-600 text-center mt-2">
-            Latest Update (September 2025): A U.S.–China framework deal has been announced. Deadline extended to December 16, 2025.{' '}
+            Latest Update (January 2025): President Trump signed a 75-day extension after the Supreme Court upheld the TikTok ban law. ByteDance must complete a sale by April 4, 2025.{' '}
             <a
-              href="https://www.reuters.com/sustainability/boards-policy-regulation/tiktok-lives-us-china-deal-app-keep-operating-us-2025-09-16/?utm_source=chatgpt.com"
+              href="https://www.npr.org/2025/01/20/nx-s1-5268701/trump-executive-order-tiktok-ban"
               target="_blank"
               rel="noopener noreferrer"
               className="underline text-blue-600"
             >
-              (Source: Reuters, September 16, 2025)
+              (Source: NPR, January 20, 2025)
             </a>
           </p>
         </section>
@@ -145,7 +145,7 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-2">📅 This Week&apos;s Status</h3>
             <p>
               <strong>TikTok is still live.</strong> There is no ban this weekend. The next major decision window closes{' '}
-              <strong>Monday, 16 December 2025</strong>.
+              <strong>Friday, April 4, 2025</strong>.
             </p>
           </aside>
 

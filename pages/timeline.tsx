@@ -54,7 +54,7 @@ export default function TimelinePage() {
         <aside className="bg-blue-50 p-6 rounded-lg text-center">
           <h2 className="text-xl font-semibold mb-2">What&apos;s Next?</h2>
           <p className="text-gray-700 mb-4">
-            The current deadline is <strong>December 16, 2025</strong>. We&apos;ll update this timeline immediately when new developments occur.
+            The current deadline is <strong>April 4, 2025</strong>. We&apos;ll update this timeline immediately when new developments occur.
           </p>
           <Link href="/" className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
             View Live Countdown
