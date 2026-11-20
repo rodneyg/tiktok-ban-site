@@ -6,9 +6,9 @@ export default function SupportPage() {
   return (
     <>
       <SEOHead
-        title="TikTok Ban Countdown – Is TikTok Banned Today?"
-        description="Countdown to the new TikTok ban deadline: 17 September 2025. Get updates, stay informed, and protect your access now."
-        url="https://didtiktokgetbanned.com"
+        title="Support Did TikTok Get Banned?"
+        description="Support independent coverage of TikTok’s availability in the United States."
+        url="https://didtiktokgetbanned.com/support"
       />
 
       <div className="min-h-screen bg-white text-black p-6 max-w-2xl mx-auto text-center space-y-6">

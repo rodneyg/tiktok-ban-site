@@ -2,27 +2,24 @@ import React from 'react';
 import Link from 'next/link';
 import SEOHead from './components/SEOHead';
 import NewsTimeline from './components/NewsTimeline';
+import { deadlineStatus, statusHeadline, verifiedOn } from '../utils/tiktokStatus';
 
 export default function TimelinePage() {
   const timelineStructuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "TikTok Ban Timeline - Complete History of Events and Deadlines",
-    "description": "Complete timeline of TikTok ban events, extensions, and deadlines from January 2025 to present. Track all major developments in the U.S. TikTok ban process.",
+    "headline": "U.S. TikTok Ban Timeline",
+    "description": "Key events in the U.S. TikTok ban case, from the January 2025 outage to the 2026 U.S. joint venture.",
     "author": {
       "@type": "Organization",
       "name": "TikTok Ban Tracker"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Did TikTok Get Banned?",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://didtiktokgetbanned.com/tiktok-ban-card.png"
-      }
+      "name": "Did TikTok Get Banned?"
     },
     "datePublished": "2025-01-20",
-    "dateModified": new Date().toISOString(),
+    "dateModified": verifiedOn,
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https://didtiktokgetbanned.com/timeline"
@@ -32,8 +29,8 @@ export default function TimelinePage() {
   return (
     <>
       <SEOHead
-        title="TikTok Ban Timeline - Complete History of Events and Deadlines"
-        description="Complete timeline of TikTok ban events, extensions, and deadlines from January 2025 to present. Track all major developments in the U.S. TikTok ban process."
+        title="U.S. TikTok Ban Timeline"
+        description="Key events in the U.S. TikTok ban case, from the January 2025 outage to the 2026 U.S. joint venture."
         url="https://didtiktokgetbanned.com/timeline"
         keywords="tiktok ban timeline, tiktok ban history, tiktok ban events, tiktok deadline history, bytedance deadline, tiktok ban extensions"
         structuredData={timelineStructuredData}
@@ -43,7 +40,7 @@ export default function TimelinePage() {
         <header className="text-center space-y-4">
           <h1 className="text-4xl font-bold">TikTok Ban Timeline</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Track the complete history of TikTok ban developments, deadline extensions, and key events from government officials and potential buyers.
+            Key events from the 2025 court ruling and brief outage to the January 2026 deal.
           </p>
         </header>
 
@@ -54,10 +51,10 @@ export default function TimelinePage() {
         <aside className="bg-blue-50 p-6 rounded-lg text-center">
           <h2 className="text-xl font-semibold mb-2">What&apos;s Next?</h2>
           <p className="text-gray-700 mb-4">
-            The current deadline is <strong>December 16, 2025</strong>. We&apos;ll update this timeline immediately when new developments occur.
+            {statusHeadline} {deadlineStatus}
           </p>
-          <Link href="/" className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-            View Live Countdown
+          <Link href="/status" className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-700 transition-colors">
+            Read the current status
           </Link>
         </aside>
 

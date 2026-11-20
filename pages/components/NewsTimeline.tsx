@@ -1,97 +1,88 @@
 'use client';
 
-import React from 'react';
+import { sources } from '../../utils/tiktokStatus';
 
 interface TimelineEvent {
   date: string;
   title: string;
   description: string;
-  source?: {
+  source: {
     name: string;
     url: string;
   };
-  type: 'extension' | 'deadline' | 'legal' | 'news';
+  type: 'extension' | 'legal' | 'news';
 }
 
 const timelineEvents: TimelineEvent[] = [
   {
-    date: '2025-09-17',
-    title: 'U.S.–China Framework Deal Announced',
-    description: 'A framework deal has been announced where U.S. investors (Oracle, Silver Lake, Andreessen Horowitz) will control ~80% of TikTok U.S. operations, with ByteDance retaining ~19.9%. U.S. user data will be hosted in Oracle data centers, though algorithm control remains unresolved.',
-    source: {
-      name: 'Reuters',
-      url: 'https://www.reuters.com/sustainability/boards-policy-regulation/tiktok-lives-us-china-deal-app-keep-operating-us-2025-09-16/?utm_source=chatgpt.com'
-    },
-    type: 'news'
+    date: '2026-08-10',
+    title: 'Federal device guidance rescinded',
+    description: 'The Office of Management and Budget withdrew its earlier TikTok guidance after the Justice Department concluded that the federal device law does not cover the joint venture version of the app.',
+    source: { name: 'Office of Management and Budget', url: sources.devices },
+    type: 'legal',
+  },
+  {
+    date: '2026-01-23',
+    title: 'U.S. joint venture announced',
+    description: 'TikTok announced that the new U.S. joint venture had been established. The deal kept the app available to U.S. users.',
+    source: { name: 'TikTok USDS Joint Venture', url: sources.jointVenture },
+    type: 'news',
+  },
+  {
+    date: '2025-09-25',
+    title: 'Executive order approves the deal framework',
+    description: 'The order found that the proposed deal would satisfy the divestiture requirement once signed and directed a 120-day enforcement pause.',
+    source: { name: 'Federal Register', url: sources.order },
+    type: 'legal',
   },
   {
     date: '2025-09-16',
-    title: 'Deadline Extended to December 16, 2025',
-    description: 'The White House announced a further extension of the TikTok enforcement deadline to December 16, 2025, providing additional time for the framework deal to be finalized.',
-    source: {
-      name: 'White House',
-      url: 'https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/?utm_source=chatgpt.com'
-    },
-    type: 'extension'
-  },
-  {
-    date: '2025-01-20',
-    title: 'Supreme Court Upholds PAFACA Law',
-    description: 'The Supreme Court upheld the Protecting Americans from Foreign Adversary Controlled Applications Act (PAFACA) in TikTok v. Garland, confirming the legal requirement for ByteDance to divest U.S. TikTok operations.',
-    source: {
-      name: 'Wikipedia',
-      url: 'https://en.wikipedia.org/wiki/TikTok_v._Garland?utm_source=chatgpt.com'
-    },
-    type: 'legal'
+    title: 'Enforcement delayed again',
+    description: 'The September order delayed enforcement into December 2025. The September 25 order later set a new enforcement pause.',
+    source: { name: 'Federal Register', url: sources.order },
+    type: 'extension',
   },
   {
     date: '2025-06-19',
-    title: 'Trump Signs 90-Day Extension',
-    description: 'President Trump signed another executive order granting ByteDance an additional 90 days to sell TikTok, pushing the deadline to September 17, 2025.',
-    source: {
-      name: 'Reuters',
-      url: 'https://www.reuters.com/world/us/trump-says-he-signed-executive-order-extending-deadline-tiktok-closing-2025-06-19/'
-    },
-    type: 'extension'
+    title: 'June enforcement delay',
+    description: 'An executive order delayed enforcement until September 17, 2025.',
+    source: { name: 'Federal Register', url: sources.order },
+    type: 'extension',
   },
   {
     date: '2025-04-04',
-    title: 'First Extension Signed',
-    description: 'Trump signed the first extension, pushing the original deadline from April 4 to June 19, 2025.',
-    source: {
-      name: 'NPR',
-      url: 'https://www.npr.org/2025/04/04/nx-s1-5347418/trump-tiktok-second-ban-delay'
-    },
-    type: 'extension'
+    title: 'April enforcement delay',
+    description: 'An executive order delayed enforcement until June 19, 2025.',
+    source: { name: 'Federal Register', url: sources.order },
+    type: 'extension',
   },
   {
     date: '2025-01-20',
-    title: 'Original TikTok Ban Executive Order',
-    description: 'Trump signs the original executive order setting the TikTok ban process in motion with initial deadline.',
-    source: {
-      name: 'NPR',
-      url: 'https://www.npr.org/2025/01/20/nx-s1-5268701/trump-executive-order-tiktok-ban'
-    },
-    type: 'legal'
+    title: 'Initial enforcement pause',
+    description: 'An executive order instructed the Justice Department to pause enforcement for 75 days.',
+    source: { name: 'Federal Register', url: sources.order },
+    type: 'extension',
   },
   {
-    date: '2025-04-04',
-    title: 'Potential Buyers Emerge',
-    description: 'Several major companies including Amazon, Microsoft, and others express interest in acquiring TikTok\'s U.S. operations.',
-    source: {
-      name: 'BBC',
-      url: 'https://www.bbc.com/news/articles/cx256dd1znpo'
-    },
-    type: 'news'
-  }
+    date: '2025-01-19',
+    title: 'TikTok starts restoring U.S. service',
+    description: 'TikTok began restoring service hours after it went offline around the date the 2024 law took effect.',
+    source: { name: 'Associated Press', url: sources.outage },
+    type: 'news',
+  },
+  {
+    date: '2025-01-17',
+    title: 'Supreme Court rejects TikTok’s First Amendment challenge',
+    description: 'The Court upheld the 2024 law against a First Amendment challenge brought by TikTok and others.',
+    source: { name: 'U.S. Supreme Court', url: sources.court },
+    type: 'legal',
+  },
 ];
 
 const getEventIcon = (type: TimelineEvent['type']) => {
   switch (type) {
     case 'extension':
       return '⏰';
-    case 'deadline':
-      return '🚨';
     case 'legal':
       return '⚖️';
     case 'news':
@@ -105,8 +96,6 @@ const getEventColor = (type: TimelineEvent['type']) => {
   switch (type) {
     case 'extension':
       return 'border-blue-500 bg-blue-50';
-    case 'deadline':
-      return 'border-red-500 bg-red-50';
     case 'legal':
       return 'border-purple-500 bg-purple-50';
     case 'news':
@@ -117,10 +106,6 @@ const getEventColor = (type: TimelineEvent['type']) => {
 };
 
 export default function NewsTimeline() {
-  const sortedEvents = timelineEvents.sort((a, b) => 
-    new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
-
   return (
     <div className="w-full max-w-2xl mx-auto">
       <h2 className="text-2xl font-bold mb-6 text-center">TikTok Ban Timeline</h2>
@@ -128,8 +113,8 @@ export default function NewsTimeline() {
         {/* Timeline line */}
         <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-300"></div>
         
-        {sortedEvents.map((event, index) => (
-          <div key={index} className="relative flex items-start mb-8 last:mb-0">
+        {timelineEvents.map((event) => (
+          <div key={event.date} className="relative flex items-start mb-8 last:mb-0">
             {/* Timeline dot */}
             <div className="flex-shrink-0 w-8 h-8 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center text-sm z-10">
               {getEventIcon(event.type)}
@@ -139,30 +124,29 @@ export default function NewsTimeline() {
             <div className={`ml-6 p-4 rounded-lg border-l-4 ${getEventColor(event.type)} flex-1`}>
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                 <h3 className="font-semibold text-lg">{event.title}</h3>
-                <span className="text-sm text-gray-600 mt-1 sm:mt-0">
+                <time dateTime={event.date} className="text-sm text-gray-600 mt-1 sm:mt-0">
                   {new Date(event.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
-                    day: 'numeric'
+                    day: 'numeric',
+                    timeZone: 'UTC'
                   })}
-                </span>
+                </time>
               </div>
               <p className="text-gray-700 leading-relaxed mb-3">
                 {event.description}
               </p>
-              {event.source && (
-                <a
-                  href={event.source.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
-                >
-                  Source: {event.source.name}
-                  <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              )}
+              <a
+                href={event.source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
+              >
+                Source: {event.source.name}
+                <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
             </div>
           </div>
         ))}
