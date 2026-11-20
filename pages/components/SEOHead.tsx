@@ -1,4 +1,7 @@
 import Head from 'next/head';
+import { statusSummary } from '../../utils/tiktokStatus';
+
+const socialImage = 'https://didtiktokgetbanned.com/tiktok-status-card.png';
 
 interface SEOHeadProps {
   title?: string;
@@ -9,10 +12,10 @@ interface SEOHeadProps {
 }
 
 export default function SEOHead({
-  title = 'Did TikTok Get Banned? No - Current Status & Ban Countdown',
-  description = 'Is TikTok banned today? No. Track the official U.S. TikTok ban deadline: September 17, 2025. Get real-time updates on TikTok ban status, what it means, and how to protect your access.',
+  title = 'Did TikTok Get Banned? Current U.S. Status',
+  description = statusSummary,
   url = 'https://didtiktokgetbanned.com',
-  keywords = 'did tiktok get banned, is tiktok banned, tiktok ban, tiktok ban deadline, tiktok ban countdown, tiktok ban status, tiktok ban news, when is tiktok getting banned',
+  keywords = 'did tiktok get banned, is tiktok banned, tiktok ban, tiktok ban deadline, tiktok ban status, tiktok ban news, when is tiktok getting banned',
   structuredData
 }: SEOHeadProps) {
   return (
@@ -30,14 +33,14 @@ export default function SEOHead({
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="apple-mobile-web-app-title" content="TikTok Ban Tracker" />
-      <link rel="apple-touch-icon" href="/tiktok-ban-card.png" />
+      <link rel="apple-touch-icon" href="/favicon.ico" />
       
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={url} />
-      <meta property="og:image" content={`${url}/tiktok-ban-card.png`} />
+      <meta property="og:image" content={socialImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="Did TikTok Get Banned?" />
@@ -47,7 +50,7 @@ export default function SEOHead({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={`${url}/tiktok-ban-card.png`} />
+      <meta name="twitter:image" content={socialImage} />
       <meta name="twitter:site" content="@didtiktokgetbanned" />
       
       {/* Additional SEO meta tags */}
