@@ -1,6 +1,6 @@
 'use client';
 
-import { sources } from '../../utils/tiktokStatus';
+import { courtChallengeUpdate, sources } from '../../utils/tiktokStatus';
 
 interface TimelineEvent {
   date: string;
@@ -14,6 +14,7 @@ interface TimelineEvent {
 }
 
 const timelineEvents: TimelineEvent[] = [
+  { ...courtChallengeUpdate, type: 'legal' },
   {
     date: '2026-08-10',
     title: 'Federal device guidance rescinded',

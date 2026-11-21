@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import SEOHead from './components/SEOHead';
-import { deadlineStatus, dealSummary, sources, statusHeadline, statusSummary, verifiedOn, verifiedOnLabel } from '../utils/tiktokStatus';
+import { courtChallengeUpdate, deadlineStatus, dealSummary, sources, statusHeadline, statusSummary, verifiedOn, verifiedOnLabel } from '../utils/tiktokStatus';
 
 export default function StatusPage() {
   return (
@@ -30,6 +30,12 @@ export default function StatusPage() {
           <h2 className="text-xl font-semibold">What happened to the law?</h2>
           <p>The 2024 law remains in place. The September 25, 2025 executive order determined that the deal would meet the law&apos;s divestiture requirements once the agreements were signed.</p>
           <p><a href={sources.order} className="text-blue-700 underline">Read the executive order</a></p>
+        </section>
+
+        <section className="space-y-2">
+          <h2 className="text-xl font-semibold">{courtChallengeUpdate.title}</h2>
+          <p>{courtChallengeUpdate.description}</p>
+          <p><a href={courtChallengeUpdate.source.url} className="text-blue-700 underline">Read the November 6 court order</a></p>
         </section>
 
         <nav className="flex flex-wrap gap-4" aria-label="Navigation">

@@ -4,12 +4,14 @@ import SEOHead from './components/SEOHead';
 import NewsTimeline from './components/NewsTimeline';
 import { deadlineStatus, statusHeadline, verifiedOn } from '../utils/tiktokStatus';
 
+const timelineDescription = 'Key events in the U.S. TikTok ban case, including the January 2025 outage, the U.S. joint venture, and the court challenge to the deal.';
+
 export default function TimelinePage() {
   const timelineStructuredData = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "U.S. TikTok Ban Timeline",
-    "description": "Key events in the U.S. TikTok ban case, from the January 2025 outage to the 2026 U.S. joint venture.",
+    "description": timelineDescription,
     "author": {
       "@type": "Organization",
       "name": "TikTok Ban Tracker"
@@ -30,7 +32,7 @@ export default function TimelinePage() {
     <>
       <SEOHead
         title="U.S. TikTok Ban Timeline"
-        description="Key events in the U.S. TikTok ban case, from the January 2025 outage to the 2026 U.S. joint venture."
+        description={timelineDescription}
         url="https://didtiktokgetbanned.com/timeline"
         keywords="tiktok ban timeline, tiktok ban history, tiktok ban events, tiktok deadline history, bytedance deadline, tiktok ban extensions"
         structuredData={timelineStructuredData}
@@ -40,7 +42,7 @@ export default function TimelinePage() {
         <header className="text-center space-y-4">
           <h1 className="text-4xl font-bold">TikTok Ban Timeline</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Key events from the 2025 court ruling and brief outage to the January 2026 deal.
+            {timelineDescription}
           </p>
         </header>
 
