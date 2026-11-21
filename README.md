@@ -13,15 +13,17 @@ This site uses Next.js (Pages Router) and Tailwind CSS.
 ```bash
 npm ci
 npm run dev
-npm run lint
-npm run build
 ```
 
-The status copy and source links live in `utils/tiktokStatus.ts`.
+Run `npm run lint` and `npm run build` separately to check changes.
+
+The shared status summary, verification date, and source URLs live in [`utils/tiktokStatus.ts`](utils/tiktokStatus.ts). The status page and timeline add their own explanations in [`pages/status.tsx`](pages/status.tsx) and [`pages/components/NewsTimeline.tsx`](pages/components/NewsTimeline.tsx).
+
+See the [changelog](CHANGELOG.md) for site updates.
 
 ## Countdown API
 
-`GET /api/countdown` remains available for integrations. With no announced nationwide ban deadline, it returns:
+`GET /api/countdown` remains available for integrations. It reports the last verified status. The current response marks the deadline as inactive and sets the countdown fields to null.
 
 ```json
 {
