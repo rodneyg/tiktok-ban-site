@@ -1,15 +1,13 @@
 'use client';
-import React from 'react';
+import { statusSummary } from '../../utils/tiktokStatus';
 
-const message = encodeURIComponent(
-  "TikTok could be banned in the U.S. by 16 December 2025. Track it live: https://www.didtiktokgetbanned.com/"
-);
 const url = 'https://www.didtiktokgetbanned.com/';
+const message = encodeURIComponent(`${statusSummary} ${url}`);
 
 export default function ShareBlock() {
   return (
     <div className="mt-8 w-full flex flex-col items-center space-y-3">
-      <p className="text-sm font-medium text-gray-700">Share this countdown:</p>
+      <p className="text-sm font-medium text-gray-700">Share this update</p>
       <div className="flex flex-wrap justify-center gap-3">
         <a
           href={`https://twitter.com/intent/tweet?text=${message}`}

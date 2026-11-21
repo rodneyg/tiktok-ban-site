@@ -1,166 +1,60 @@
-import React from 'react';
 import Link from 'next/link';
 import SEOHead from './components/SEOHead';
-import EnhancedCountdown from './components/EnhancedCountdown';
-import StatusBadge from './components/StatusBadge';
 import ShareBlock from './components/ShareBlock';
-import { getTimeRemaining } from '../utils/time';
+import { deadlineStatus, dealSummary, sources, statusHeadline, statusSummary, verifiedOn, verifiedOnLabel } from '../utils/tiktokStatus';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Did TikTok Get Banned?',
+  url: 'https://didtiktokgetbanned.com',
+  description: statusSummary,
+};
 
 export default function Home() {
-  const timeLeft = getTimeRemaining();
-  
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Did TikTok Get Banned?",
-    "url": "https://didtiktokgetbanned.com",
-    "description": "Real-time TikTok ban status tracker for the United States",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://didtiktokgetbanned.com/?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    },
-    "mainEntity": {
-      "@type": "Question",
-      "name": "Did TikTok get banned?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No, TikTok is not banned in the United States as of now. The current deadline for the TikTok ban is December 16, 2025. ByteDance has until this date to sell TikTok to a US-approved buyer or face removal from US app stores."
-      }
-    },
-    "about": {
-      "@type": "Thing",
-      "name": "TikTok Ban",
-      "description": "US government legislation requiring ByteDance to sell TikTok or face platform restrictions"
-    }
-  };
-
   return (
     <>
-      <SEOHead
-        title="Did TikTok Get Banned? No - Current Status & Ban Countdown"
-        description="Is TikTok banned today? No. Track the official U.S. TikTok ban deadline: December 16, 2025. Get real-time updates on TikTok ban status, what it means, and how to protect your access."
-        url="https://didtiktokgetbanned.com"
-        structuredData={structuredData}
-      />
+      <SEOHead structuredData={structuredData} />
 
       <div className="min-h-screen bg-white text-black p-6 flex flex-col items-center justify-center space-y-10">
-        <header className="text-center space-y-4">
-          <h1 className="text-4xl font-bold">Did TikTok Get Banned Today?</h1>
-          <StatusBadge daysRemaining={timeLeft.days} />
-          <p className="text-xl font-semibold text-green-600">No — but the clock is ticking.</p>
-          <p className="text-lg text-gray-600">
-            Next Deadline: <strong>Monday, 16 December 2025</strong>{' '}
-            <span className="text-sm">
-              (Source:{' '}
-              <a
-                href="https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/?utm_source=chatgpt.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline text-blue-600"
-              >
-                White House, 16 Sep 2025
-              </a>
-              )
-            </span>
-          </p>
-        </header>
+        <main className="w-full max-w-2xl space-y-8">
+          <header className="text-center space-y-4">
+            <h1 className="text-4xl font-bold">Did TikTok Get Banned Today?</h1>
+            <p className="text-xl font-semibold text-green-700">{statusHeadline}</p>
+            <p className="text-lg text-gray-700">{deadlineStatus}</p>
+            <p className="text-sm text-gray-600">Last verified <time dateTime={verifiedOn}>{verifiedOnLabel}</time></p>
+          </header>
 
-        <section aria-label="TikTok Ban Countdown">
-          <EnhancedCountdown />
-          <p className="text-sm text-gray-500 text-center mt-4">
-            (Based on current U.S. deadline: <strong>Monday, December 16, 2025</strong>.{' '}
-            <a
-              href="https://www.whitehouse.gov/presidential-actions/2025/09/further-extending-the-tiktok-enforcement-delay-9dde/?utm_source=chatgpt.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-blue-600"
-            >
-              Source: White House, September 16, 2025
-            </a>
-            )
-          </p>
-          <p className="text-sm text-amber-600 text-center mt-2">
-            Latest Update (September 2025): A U.S.–China framework deal has been announced. Deadline extended to December 16, 2025.{' '}
-            <a
-              href="https://www.reuters.com/sustainability/boards-policy-regulation/tiktok-lives-us-china-deal-app-keep-operating-us-2025-09-16/?utm_source=chatgpt.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline text-blue-600"
-            >
-              (Source: Reuters, September 16, 2025)
-            </a>
-          </p>
-        </section>
+          <section aria-label="Why TikTok is available" className="border border-green-200 bg-green-50 p-5 rounded-xl text-center">
+            <h2 className="text-xl font-semibold mb-2">What changed</h2>
+            <p>{dealSummary}</p>
+            <p className="mt-2"><a href={sources.deal} className="text-blue-700 underline">Read the Associated Press coverage</a></p>
+          </section>
 
-        <section aria-label="Share this information">
-          <ShareBlock />
-        </section>
+          <section aria-label="Share this information">
+            <ShareBlock />
+          </section>
 
-        <nav className="text-center space-x-4 pb-4" aria-label="Main navigation">
-          <Link href="/what-this-means" className="text-blue-600 underline">What This Means</Link>
-          <Link href="/timeline" className="text-blue-600 underline">Timeline</Link>
-          <Link href="/status" className="text-blue-600 underline">Status</Link>
-          <Link href="/faq" className="text-blue-600 underline">FAQ</Link>
-          <Link href="/support" className="text-blue-600 underline">Support</Link>
-        </nav>
-
-        <main className="w-full max-w-xl space-y-6">
-          <article className="border p-4 rounded-xl shadow-md">
-            <h2 className="text-2xl font-semibold mb-2">Do you still have TikTok installed?</h2>
-            <div className="space-y-4">
-              <section className="bg-gray-100 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">✅ Yes - You still have TikTok:</h3>
-                <ul className="list-disc ml-5 space-y-1">
-                  <li>Do NOT delete the app — you may not be able to redownload it.</li>
-                  <li>Turn off auto-updates to avoid forced removal or lockout.</li>
-                  <li>Install a VPN now, before the ban, to keep future access.</li>
-                  <li>Start following your favorite creators on other platforms (Instagram, YouTube).</li>
-                </ul>
-                <a
-                  href="https://nordvpn.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-block text-blue-600 underline"
-                >
-                  Set up a VPN that works with TikTok
-                </a>
-              </section>
-
-              <section className="bg-gray-100 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">❌ No - You don&apos;t have TikTok:</h3>
-                <ul className="list-disc ml-5 space-y-1">
-                  <li>You likely won&apos;t be able to reinstall TikTok after the ban hits.</li>
-                  <li>VPNs won&apos;t help unless you already have the app on your device.</li>
-                  <li>To keep up with creators, try finding them on Instagram or YouTube Shorts.</li>
-                </ul>
-              </section>
-            </div>
-          </article>
-
-          <aside className="border p-4 rounded-xl shadow-md bg-blue-50">
-            <h3 className="text-xl font-bold mb-2">📅 This Week&apos;s Status</h3>
-            <p>
-              <strong>TikTok is still live.</strong> There is no ban this weekend. The next major decision window closes{' '}
-              <strong>Monday, 16 December 2025</strong>.
-            </p>
-          </aside>
-
-          <footer className="text-center border-t pt-6">
-            <p className="text-sm">Built by creators. Help us stay independent and ad-free.</p>
-            <a
-              href="https://ko-fi.com/rg2official/?tier=Support%20with%20%243"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-block text-white bg-black px-4 py-2 rounded-full font-semibold"
-            >
-              Support with $3
-            </a>
-          </footer>
+          <nav className="flex flex-wrap justify-center gap-4 text-center" aria-label="Main navigation">
+            <Link href="/what-this-means" className="text-blue-600 underline">What This Means</Link>
+            <Link href="/timeline" className="text-blue-600 underline">Timeline</Link>
+            <Link href="/status" className="text-blue-600 underline">Status</Link>
+            <Link href="/faq" className="text-blue-600 underline">FAQ</Link>
+            <Link href="/support" className="text-blue-600 underline">Support</Link>
+          </nav>
         </main>
+
+        <footer className="text-center border-t pt-6 w-full max-w-2xl">
+          <p className="text-sm">Built by creators. Help us stay independent and ad-free.</p>
+          <a
+            href="https://ko-fi.com/rg2official/?tier=Support%20with%20%243"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-white bg-black px-4 py-2 rounded-full font-semibold"
+          >
+            Support with $3
+          </a>
+        </footer>
       </div>
     </>
   );
