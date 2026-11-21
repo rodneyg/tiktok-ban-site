@@ -2,6 +2,11 @@
 
 Dates reflect when each change merged, in UTC.
 
+## 2026-11-21
+
+- Added the court challenge to TikTok’s U.S. deal to the status page and timeline. The court order leaves U.S. availability unchanged. [#19](https://github.com/rodneyg/tiktok-ban-site/pull/19)
+- Improved text contrast on the Twitter/X and Facebook share buttons. [#20](https://github.com/rodneyg/tiktok-ban-site/pull/20)
+
 ## 2026-11-20
 
 - Replaced the ban countdown with the current U.S. availability status and an explanation of the January 2026 joint venture. The countdown API now reports an inactive deadline with null countdown values. [#17](https://github.com/rodneyg/tiktok-ban-site/pull/17)
