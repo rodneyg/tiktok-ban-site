@@ -13,7 +13,7 @@ export default function ShareBlock() {
           href={`https://twitter.com/intent/tweet?text=${message}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 rounded-full text-white bg-[#1DA1F2] hover:bg-[#0d8ddb] transition"
+          className="px-4 py-2 rounded-full text-white bg-[#006FAE] hover:bg-[#005B91] transition"
         >
           Share on Twitter/X
         </a>
@@ -21,7 +21,7 @@ export default function ShareBlock() {
           href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 rounded-full text-white bg-[#1877F2] hover:bg-[#0f66e8] transition"
+          className="px-4 py-2 rounded-full text-white bg-[#1467D2] hover:bg-[#1057B4] transition"
         >
           Share on Facebook
         </a>
