@@ -60,7 +60,7 @@ export default function TimelinePage() {
           </Link>
         </aside>
 
-        <nav className="text-center space-x-4 pb-4 border-t pt-6" aria-label="Navigation">
+        <nav className="flex flex-wrap justify-center gap-4 text-center pb-4 border-t pt-6" aria-label="Navigation">
           <Link href="/" className="text-blue-600 underline">← Back to Home</Link>
           <Link href="/status" className="text-blue-600 underline">Current Status</Link>
           <Link href="/faq" className="text-blue-600 underline">FAQ</Link>
