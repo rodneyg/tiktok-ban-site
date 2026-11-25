@@ -4,7 +4,7 @@ import { createServer } from 'node:http';
 import { test } from 'node:test';
 import next from 'next';
 
-test('the production countdown API returns the documented status fields', async (t) => {
+test('the production countdown API reports an inactive deadline', async (t) => {
   const hostname = '127.0.0.1';
   const app = next({ dev: false, hostname });
   t.after(() => app.close());
@@ -21,10 +21,13 @@ test('the production countdown API returns the documented status fields', async 
 
   assert.equal(response.status, 200);
   const status = await response.json();
-  assert.equal(typeof status.status, 'string');
+  assert.equal(status.status, 'inactive');
+  assert.equal(status.deadline, null);
+  assert.equal(status.timeRemaining, null);
+  assert.equal(status.nextDeadline, null);
+  assert.deepEqual(status.progress, {
+    percentage: null,
+    description: 'There is no announced nationwide ban deadline.',
+  });
   assert.match(status.lastUpdated, /^\d{4}-\d{2}-\d{2}$/);
-  assert.equal(typeof status.progress.description, 'string');
-  assert.ok(Object.hasOwn(status, 'deadline'));
-  assert.ok(Object.hasOwn(status, 'timeRemaining'));
-  assert.ok(Object.hasOwn(status, 'nextDeadline'));
 });
