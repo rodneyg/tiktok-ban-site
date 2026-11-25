@@ -2,7 +2,7 @@ name: Deploy static mirror to GitHub Pages
 
 on:
   push:
-    branches: [main, t17446-pages-mirror]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
