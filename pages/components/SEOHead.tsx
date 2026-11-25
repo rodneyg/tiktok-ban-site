@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { statusSummary } from '../../utils/tiktokStatus';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const socialImage = 'https://didtiktokgetbanned.com/tiktok-status-card.png';
 
 interface SEOHeadProps {
@@ -28,12 +29,12 @@ export default function SEOHead({
       <link rel="canonical" href={url} />
       
       {/* PWA Manifest */}
-      <link rel="manifest" href="/manifest.json" />
+      <link rel="manifest" href={`${basePath}/manifest.json`} />
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="apple-mobile-web-app-title" content="TikTok Ban Tracker" />
-      <link rel="apple-touch-icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href={`${basePath}/favicon.ico`} />
       
       {/* Open Graph */}
       <meta property="og:title" content={title} />
