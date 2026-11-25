@@ -2,6 +2,10 @@
 
 Dates reflect when each change merged, in UTC.
 
+## 2026-11-25
+
+- Made navigation links at least 44 by 44 pixels, let timeline navigation wrap on narrow screens, and gave the support page clear navigation and main-content landmarks. [#22](https://github.com/rodneyg/tiktok-ban-site/pull/22)
+
 ## 2026-11-21
 
 - Added the court challenge to TikTok’s U.S. deal to the status page and timeline. The court order leaves U.S. availability unchanged. [#19](https://github.com/rodneyg/tiktok-ban-site/pull/19)
