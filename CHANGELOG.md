@@ -2,6 +2,10 @@
 
 Dates reflect when each change merged, in UTC.
 
+## 2026-11-26
+
+- Updated the status pages and countdown API with the November 26 verification date. [#28](https://github.com/rodneyg/tiktok-ban-site/pull/28)
+
 ## 2026-11-25
 
 - Added a GitHub Pages mirror so readers can open the site when the main host is unavailable. [#25](https://github.com/rodneyg/tiktok-ban-site/pull/25)
