@@ -1,5 +1,5 @@
-export const verifiedOn = '2026-11-21';
-export const verifiedOnLabel = 'November 21, 2026';
+export const verifiedOn = '2026-11-26';
+export const verifiedOnLabel = 'November 26, 2026';
 export const statusHeadline = 'TikTok is available in the U.S.';
 export const deadlineStatus = 'There is no announced nationwide ban deadline.';
 export const statusSummary = `${statusHeadline} ${deadlineStatus}`;
