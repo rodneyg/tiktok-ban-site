@@ -1,6 +1,6 @@
 # Did TikTok Get Banned?
 
-The site tracks TikTok’s availability in the United States and explains the history of the 2024 law, the brief January 2025 outage, and the January 2026 U.S. joint venture.
+The site tracks TikTok’s availability in the United States and explains the history of the 2024 law, the brief January 2025 outage, the January 2026 U.S. joint venture, and the court challenge to the deal.
 
 - [Live site](https://didtiktokgetbanned.com/)
 - [Current status](https://didtiktokgetbanned.com/status)
@@ -23,7 +23,7 @@ See the [changelog](CHANGELOG.md) for site updates.
 
 ## Countdown API
 
-`GET /api/countdown` remains available for integrations. It reports the last verified status. The current response marks the deadline as inactive and sets the countdown fields to null.
+`GET /api/countdown` remains available for integrations. It reports the last verified status. When there is no announced nationwide ban deadline, the response has HTTP status 200, marks the deadline as inactive, and sets the countdown fields to null.
 
 ```json
 {
@@ -34,12 +34,12 @@ See the [changelog](CHANGELOG.md) for site updates.
     "percentage": null,
     "description": "There is no announced nationwide ban deadline."
   },
-  "lastUpdated": "2026-11-20",
+  "lastUpdated": "2026-11-21",
   "nextDeadline": null
 }
 ```
 
-`lastUpdated` is the date the status was verified.
+`lastUpdated` records the most recent status verification date and can change after this example.
 
 ## About
 
