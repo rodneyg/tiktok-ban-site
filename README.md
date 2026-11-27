@@ -2,6 +2,16 @@
 
 The site tracks TikTok’s availability in the United States and explains the history of the 2024 law, the brief January 2025 outage, the January 2026 U.S. joint venture, and the court challenge to the deal.
 
+## Current screenshots
+
+Captured from the live site on November 27, 2026.
+
+![Live home page showing the current TikTok availability summary](docs/screenshots/home.png)
+
+![Status page showing the current availability details](docs/screenshots/status.png)
+
+![Timeline page showing the history of TikTok availability](docs/screenshots/timeline.png)
+
 - [Live site](https://didtiktokgetbanned.com/)
 - [GitHub Pages mirror](https://rodneyg.github.io/tiktok-ban-site/)
 - [Current status](https://didtiktokgetbanned.com/status)
