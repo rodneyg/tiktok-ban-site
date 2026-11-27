@@ -30,4 +30,14 @@ test('the production countdown API reports an inactive deadline', async (t) => {
     description: 'There is no announced nationwide ban deadline.',
   });
   assert.match(status.lastUpdated, /^\d{4}-\d{2}-\d{2}$/);
+
+  const invalidMethod = await fetch(`http://${hostname}:${server.address().port}/api/countdown`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ deadline: 'not-a-date' }),
+    signal: AbortSignal.timeout(5_000),
+  });
+  assert.equal(invalidMethod.status, 405);
+  assert.equal(invalidMethod.headers.get('allow'), 'GET');
+  assert.deepEqual(await invalidMethod.json(), { error: 'Method not allowed' });
 });
