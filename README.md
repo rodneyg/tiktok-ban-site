@@ -37,7 +37,7 @@ See the [changelog](CHANGELOG.md) for site updates.
     "percentage": null,
     "description": "There is no announced nationwide ban deadline."
   },
-  "lastUpdated": "2026-11-21",
+  "lastUpdated": "2026-11-26",
   "nextDeadline": null
 }
 ```
